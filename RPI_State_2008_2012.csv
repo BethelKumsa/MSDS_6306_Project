@@ -1,0 +1,57 @@
+GeoFIPS,GeoName,Region,Table,LineCode,IndustryClassification,Description,2008,2009,2010,2011,2012,RPI Bracket
+1000,Alabama,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,37308,36418,36807,38362,38530,$35K - $40K
+2000,Alaska,8,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,42679,41851,43073,43773,43601,$40K - $45K
+4000,Arizona,6,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,35747,34185,33979,34695,34905,$30K - $35K
+5000,Arkansas,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,36271,35614,35193,37403,38223,$35K - $40K
+6000,California,8,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,39490,37709,37544,37953,38888,$35K - $40K
+8000,Colorado,7,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,43710,41545,41077,42004,42559,$40K - $45K
+9000,Connecticut,1,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,50618,48581,49607,50877,51559,$50K - $55K
+10000,Delaware,2,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,39999,39225,39102,40275,40848,$40K - $45K
+11000,District of Columbia,2,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,62759,60715,60378,60787,59759,$55K - $60K
+12000,Florida,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,39791,37604,38421,38736,39225,$35K - $40K
+13000,Georgia,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,37936,36568,36107,38046,38479,$35K - $40K
+15000,Hawaii,8,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,35501,35817,35481,35955,36087,$35K - $40K
+16000,Idaho,7,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,34910,33800,34137,34485,34818,$30K - $35K
+17000,Illinois,3,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,43375,41416,41257,42103,43063,$40K - $45K
+18000,Indiana,3,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,38077,36580,36808,38276,39553,$35K - $40K
+19000,Iowa,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,44314,43490,42973,45688,46376,$45K - $50K
+20000,Kansas,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,44975,42859,41992,45033,45216,$45K - $50K
+21000,Kentucky,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,36705,36077,36211,37533,37909,$35K - $40K
+22000,Louisiana,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,40841,39381,39597,40867,41432,$40K - $45K
+23000,Maine,1,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,37530,37690,38004,38402,38516,$35K - $40K
+24000,Maryland,2,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,45248,44323,44386,45291,45702,$45K - $50K
+25000,Massachusetts,1,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,47834,46997,47389,48320,49354,$45K - $50K
+26000,Michigan,3,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,37265,35859,36334,37751,38317,$35K - $40K
+27000,Minnesota,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,44748,42645,43681,44798,45494,$45K - $50K
+28000,Mississippi,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,34405,34220,34217,35690,36803,$35K - $40K
+29000,Missouri,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,42237,41019,40369,41401,41961,$40K - $45K
+30000,Montana,7,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,36664,35890,36428,37566,38665,$35K - $40K
+31000,Nebraska,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,45241,43979,43590,46804,47188,$45K - $50K
+32000,Nevada,8,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,39938,36832,36338,36237,36769,$35K - $40K
+33000,New Hampshire,1,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,41748,41544,41871,43342,43722,$40K - $45K
+34000,New Jersey,2,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,46110,44541,44086,45021,45552,$45K - $50K
+35000,New Mexico,6,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,35568,34627,34580,35245,35553,$35K - $40K
+36000,New York,2,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,43143,42068,42712,43295,43603,$40K - $45K
+37000,North Carolina,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,38716,37830,37879,38457,39103,$35K - $40K
+38000,North Dakota,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,46586,45646,48202,50923,57367,$55K - $60K
+39000,Ohio,3,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,40116,39422,39454,41597,42427,$40K - $45K
+40000,Oklahoma,6,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,41609,38213,38909,41874,42701,$40K - $45K
+41000,Oregon,8,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,37893,36513,36260,36851,37451,$35K - $40K
+42000,Pennsylvania,2,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,41989,41465,41673,42792,43173,$40K - $45K
+44000,Rhode Island,1,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,41611,41118,42441,43185,43905,$40K - $45K
+45000,South Carolina,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,36211,35112,35038,36291,36507,$35K - $40K
+46000,South Dakota,4,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,46220,45430,45650,49779,48626,$45K - $50K
+47000,Tennessee,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,38525,37739,38322,39610,40371,$40K - $45K
+48000,Texas,6,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,40891,38105,38761,41087,41733,$40K - $45K
+49000,Utah,7,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,35736,33609,33315,33963,34580,$30K - $35K
+50000,Vermont,1,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,40149,39524,39933,41276,41726,$40K - $45K
+51000,Virginia,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,44141,43035,43180,44036,44313,$40K - $45K
+53000,Washington,8,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,43296,41158,41130,41584,42164,$40K - $45K
+54000,West Virginia,5,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,34901,34999,34810,36784,37425,$35K - $40K
+55000,Wisconsin,3,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,41849,41558,41355,42110,42846,$40K - $45K
+56000,Wyoming,7,RPI1,2,...,Real per capita personal income (chained (2008) dollars) 2/,51495,45597,46565,48909,49587,$45K - $50K
+Note: See the included footnote file.,,,,,,,,,,,,
+RPI1: Real personal income,,,,,,,,,,,,
+"Last updated: April 24, 2014.",,,,,,,,,,,,
+"Source: U.S. Department of Commerce / Bureau of Economic Analysis / Regional Prices Branch
+",,,,,,,,,,,,
