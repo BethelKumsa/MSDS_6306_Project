@@ -44,7 +44,7 @@ breweriesDataset <- read.csv("Breweries.csv", header = TRUE)
 How many breweries are present in each state?
 
 ```{r breweriesByState}
-breweriesState <- summary(as.factor(breweriesDataset$state))
+breweriesState <- summary(as.factor(breweriesDataset$State))
 
 breweriesState
 breweriesState <- data.frame(abb = names(breweriesState), numBreweries = unname(breweriesState))
@@ -82,7 +82,7 @@ breweriesByStateHeatmap <- breweryMapDF %>% ggplot(aes(x=long,y=lat,group=group)
 breweriesByStateHeatmap
 
 #Horizontal Bar Graph
-breweriesDataset %>% ggplot(mapping=aes(x=forcats::fct_infreq(state)))+
+breweriesDataset %>% ggplot(mapping=aes(x=forcats::fct_infreq(State)))+
   geom_bar(position = position_dodge(width = 1), width=0.85)+
   stat_count(aes(label = ..count..), geom = "text",size=2.5, hjust = -0.5)+
   labs(y="Count", x = "State")+
@@ -138,15 +138,15 @@ Compute the median alcohol content and international bitterness unit for each st
 
 ```{r ABVandIBU}
 
-medianABVandIBU <- beerAndBrew %>% group_by(state) %>% summarize(medianStateABV = median(ABV, na.rm = TRUE), 
+medianABVandIBU <- beerAndBrew %>% group_by(State) %>% summarize(medianStateABV = median(ABV, na.rm = TRUE), 
             medianStateIBU = median(IBU, na.rm = TRUE), count = n())
 
-meanABVandIBU <- beerAndBrew %>% group_by(state) %>% summarize(meanStateABV = mean(ABV, na.rm = TRUE),
+meanABVandIBU <- beerAndBrew %>% group_by(State) %>% summarize(meanStateABV = mean(ABV, na.rm = TRUE),
                                                                  meanStateIBU = mean(IBU, na.rm = TRUE), count = n())
 
 medianABVandIBU <- as.data.frame(medianABVandIBU)
 
-medianABVandIBU %>% ggplot(mapping = aes(x = reorder(state, -medianStateABV))) + 
+medianABVandIBU %>% ggplot(mapping = aes(x = reorder(State, -medianStateABV))) + 
   geom_bar(aes(weight = medianStateABV), color = "orange") +
   ggtitle("Alcohol Content by State") + 
   ylab("Median Alcohol by Volume") + xlab("State") +
@@ -158,15 +158,15 @@ medianABVandIBU %>% ggplot(mapping = aes(x = reorder(state, -medianStateABV))) +
         axis.text.y = element_text(size=10))
 
 
-abv <- beerAndBrew %>% group_by(state) %>% summarize(medianABV = median(ABV,na.rm=TRUE))
+abv <- beerAndBrew %>% group_by(State) %>% summarize(medianABV = median(ABV,na.rm=TRUE))
 abv <- data.frame(abv)
-ibu <- beerAndBrew %>% group_by(state) %>% summarize(medianIBU = median(IBU,na.rm=TRUE))
+ibu <- beerAndBrew %>% group_by(State) %>% summarize(medianIBU = median(IBU,na.rm=TRUE))
 
 #Merging median ABV and median IBU data and stacking
-df=merge(abv,ibu, by = "state")
-dfM=melt(df,id.vars = "state")
+df=merge(abv,ibu, by = "State")
+dfM=melt(df,id.vars = "State")
 
-na.omit(dfM) %>% ggplot(mapping=aes(x =reorder(state, -value), y = value, color=variable)) + 
+na.omit(dfM) %>% ggplot(mapping=aes(x =reorder(State, -value), y = value, color=variable)) + 
   geom_col()+
   theme_economist()+
   facet_grid(variable ~ .,scales='free')+
@@ -218,8 +218,6 @@ Comment on the summary statistics and distribution of the ABV variable.
 ```{r ABVDistribution}
 
 summary(beerAndBrew$ABV)
-hist(beerAndBrew$ABV, main = "Distribution of ABV", xlab = "Alcohol by Volume", 
-     ylab = "Number of Beers", col = "light cyan")
 
 beerAndBrew %>% ggplot(mapping = aes(x= ABV)) +
   geom_histogram(color = "orange") +
@@ -334,9 +332,8 @@ Ales %>% ggplot(mapping = aes(x= IBU, y = ABV, color = Ale)) +
   ggtitle("IPA vs Other Ales") + 
   ylab("Alcohol by Volume") + xlab("International Bitterness Unit") +
   ggtitle("State's Personal Income Bracket vs Number of Breweries") + 
-
   theme_economist() +
-  theme(plot.title = element_text(size=30), legend.title = element_blank())
+  theme(plot.title = element_text(size=15), legend.title = element_blank())
 
 #Using Naive Bayes
 model = naiveBayes(trainAles[,c(7,8)],as.factor(trainAles$Ale), laplace=1)
@@ -357,7 +354,7 @@ Knock their socks off!  Find one other useful inference from the data that you f
 
 ```{r UsefulInference}
 
-RPI2012 <- na.omit(read.csv("RPI.csv", header = TRUE)) 
+RPI2012 <- na.omit(read.csv("RPI_State_2008_2012.csv", header = TRUE)) 
 RPI2012 <- RPI2012[c(2,12,13)]  
 names(RPI2012)[1] = "region"
 names(RPI2012)[2] = "RPI_2012"
@@ -396,10 +393,10 @@ breweryByRegion %>% ggplot(mapping = aes(x="", y=numBreweries, fill=RPI_Bracket)
 #Average of these beers : 4.725%
 
 #Find states that have mean ABV values of between 4% and 5%
-Meanabv <- beerAndBrew %>% group_by(state) %>% summarize(meanABV = mean(ABV,na.rm=TRUE))
+Meanabv <- beerAndBrew %>% group_by(State) %>% summarize(meanABV = mean(ABV,na.rm=TRUE))
 Meanabv=data.frame(Meanabv)
 
-Meanabv %>% ggplot(aes(x = reorder(state, -meanABV), y = meanABV))+
+Meanabv %>% ggplot(aes(x = reorder(State, -meanABV), y = meanABV))+
   geom_col()+
   labs(y="MeanABV", x = "State")+
   ggtitle("Mean ABV for each State")+
@@ -422,16 +419,22 @@ percapita %>% ggplot(aes(x = reorder(state, -Gallons.per.capita), y = Gallons.pe
   ggtitle("Alcohol consumption per capita for each State")+
   coord_flip() +
   theme_economist() +
-  geom_text(aes(label=Gallons.per.capita), position=position_dodge(width=0.9), hjust=-0.3)
+  geom_text(aes(label=Gallons.per.capita), position=position_dodge(width=0.9), hjust=-0.3, size = 2)+
+  theme(axis.text.x = element_text(size=6,angle = 90, hjust = 1, vjust = 1),
+        axis.text.y = element_text(size=6),
+        axis.title = element_text(size=10,face="bold"),
+        plot.title = element_text(size=20))
   
 
 #Heat map of drink volume per capita
+
 str(percapita)
 plot_usmap(data = percapita, values = "Gallons.per.capita", color = "red") + 
   scale_fill_continuous(low = "white", high = "red", name = "Alcohol Consumption per Capita", label = scales::comma) +
   theme(legend.position = "right")+
   labs(title = "Alcohol consumption per capita across United States")+
   theme(plot.title = element_text(size = 26, face = "bold"))
+        
 
 ```
 
